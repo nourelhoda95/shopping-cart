@@ -1,0 +1,39 @@
+/* mobiles */
+
+
+@media (max-width: 385px) {
+.plate h1{
+  font-size: 30px;
+  font-weight: 700;
+}
+}
+
+
+@media (max-width: 768px) {
+  .plate h1{
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+/* tab */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .plate h1{
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+/* laptop */
+@media (min-width: 1025px) {
+
+}
+
+
+
+
+
+
+
+
+

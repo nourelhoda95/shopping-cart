@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/all.min.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet"  href="../media-screen/media.css">
+
+    <title>Shopping Cart</title>
+  
+</head>
+
+
+<body class="bg-gray-100">
+  
+    <nav class=" navbar navbar-expand-lg navbar-dark group p-0 shadow-md d-flex justify-content-between align-items-center mycart">
+      <div class="container d-flex flex-col lg:flex-row justify-between items-center w-full d-flex bg-sky-950 h-[500px] ">
+      <div class='d-flex flex-col lg:flex-row space-x-2'>
+        
+        <ul class='flex flex-col lg:flex-row space-x-2 '>
+         <li class='mx-2 pt-3'><a href="home.html" class ='text-white mt-3'> Home</a></li>
+       
+         
+       
+       </ul>
+     </div>
+   
+     <div class="list-rght ">
+       <ul class='flex flex-col md:flex-row space-x-2 mt-9 mb-0 ul-cart'>
+     
+   
+           <li>
+            <div class="icon-cart bg-white d-flex justify-between  rounded-md pe-11 "><i class="fa-solid fa-cart-shopping h-0 pt-1 pe-11 me-9" ></i><p id="count" class="mb-0 pe-11">0</p></div>
+           <li class='mx-2 relative text-white' to="cart"> welcome</li>
+           <li  class =' mx-2 cursor-pointer  text-white' to="login" onclick="logout()" ><a class="text-white" href="index.html">logout</a> </li>
+           <li class='space-x-2 text-white'></li>
+            <i class='fab fa-facebook-f  text-white mt-1'></i>
+            <i class='fab fa-linkedin-in   text-white mt-1'></i>
+            <i class='fab fa-youtube   text-white mt-1'></i>
+            <i class='fab fa-twitter  text-white mt-1'></i>
+            <i class='fab fa-instagram   text-white mt-1'></i>
+       </li>
+       </ul>
+     </div>
+      </div>
+    </nav>
+
+
+      <div class="container  d-flex justify-content-between w-full">
+        <h3>My Cart</h3>
+      </div>
+          <!-- <button onclick = 'showmenu();' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button> -->
+    
+    
+
+
+
+
+    <div class="container mx-auto ">
+        <div id="cartItems" class="">
+          <div class="spinner d-flex justify-content-center align-items-center vh-100">
+            <div class="loader "></div>
+          </div>
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="text-right font-bold text-xl foot">
+            Total: $<span id="totalPrice">0.00</span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/cart.js"></script>
+<!-- <script src="../js/index.js"></script> -->
+</body>
+</html>
